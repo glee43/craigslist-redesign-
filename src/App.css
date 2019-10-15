@@ -1,22 +1,87 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.flex-center-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex-start-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.App-link {
-  color: #09d3ac;
+.flex-between-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.column {
+    flex-direction: column;
+}
+/* top menu items */
+
+.search-bar {
+    width: 60vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10vw;
+    border: 1px solid;
+    padding-left: 10px;
+}
+
+.account-button {
+    margin: 0px 5px;
+}
+
+/* content styles */
+.images {
+    margin: 10px;
+    height: 50vh;
+    width: 30%;
+}
+
+.small-pic {
+    margin: 5px;
+}
+
+.text {
+    margin: 10px;
+    width: 60%;
+    height: 50vh;
+}
+
+.gmap {
+    width: 80vw;
+    height: 40vh;
+    border: solid 1px black;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.gmap-img {
+    object-fit: contain;
+}
+
+.circle {
+    width: 30vh;
+    height: 30vh;
+    border: solid 1px purple;
+    background-color: purple;
+    opacity: 0.4;
+    border-radius: 50%;
+    margin: 20px;
+    position: absolute;
+    z-index: 1000;
 }
