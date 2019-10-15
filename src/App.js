@@ -12,7 +12,6 @@ import Link from "@material-ui/core/Link";
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
 import { createRequireFromPath } from "module";
 import StarIcon from "@material-ui/icons/Star";
-import GoogleMap from "./GoogleMap/GoogleMap";
 var menuData = [
     {
         name: "community",
