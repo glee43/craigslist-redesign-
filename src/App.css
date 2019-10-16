@@ -1,23 +1,31 @@
 .App {
     text-align: center;
+    margin: 0;
 }
 
 .flex-center-wrap {
     display: flex;
+    /* position: absolute; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.flex-start-wrap {
+/* .gmap {
+    padding-top: 100px;
+} */
+
+/* .flex-start-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-}
+} */
 
 .flex-between-wrap {
     display: flex;
+    padding-left: 150px;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;

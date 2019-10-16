@@ -64,6 +64,10 @@ var menuData = [
     }
 ];
 
+var gmap_style = {
+    paddingTop: "200px"
+}
+
 const useStyles = makeStyles(theme => ({
     root: {
         justifyContent: "center",
@@ -206,12 +210,14 @@ function App() {
                         age.
                     </p>
                 </div>
-                <div className="gmap flex-center-wrap">
-                    <img
-                        className="gmap-img "
-                        src={require("./images/maps.png")}
-                    ></img>
-                    <div className="circle "></div>
+                <div style={gmap_style} className="wtf-is-happening">
+                    <div className="gmap flex-center-wrap">
+                        <img
+                            className="gmap-img "
+                            src={require("./images/maps.png")}
+                        ></img>
+                        <div className="circle "></div>
+                    </div>
                 </div>
             </div>
         </div>
