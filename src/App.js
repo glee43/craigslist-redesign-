@@ -1,7 +1,7 @@
 import React from "react";
-import { Nav, Form, Button, FormControl, NavDropdown } from "react-bootstrap";
+import { Nav, Button, NavDropdown } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { makeStyles } from "@material-ui/core/styles";
@@ -10,7 +10,7 @@ import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
-import { createRequireFromPath } from "module";
+// import { createRequireFromPath } from "module";
 import StarIcon from "@material-ui/icons/Star";
 var menuData = [
     {
@@ -36,37 +36,126 @@ var menuData = [
     },
     {
         name: "housing",
-        data: []
+        data: [
+            "apts / housing",
+            "housing swap",
+            "housing wanted",
+            "office / commercial",
+            "parking / storage",
+            "real estate for sale",
+            "rooms / shared",
+            "rooms wanted",
+            "sublets / temporary",
+            "vacation rentals"
+        ]
     },
     {
         name: "jobs",
-        data: []
+        data: [
+            "jobs",
+            "accounting+finance",
+            "admin / office",
+            "arch / engineering",
+            "art / media / design",
+            "biotech / science",
+            "business / mgmt",
+            "customer service"
+        ]
     },
     {
         name: "services",
-        data: []
+        data: [
+            "automotive",
+            "beauty",
+            "cell/mobile",
+            "computer",
+            "creative",
+            "cycle",
+            "event",
+            "farm+garden",
+            "financial",
+            "household",
+            "labor/move",
+            "legal",
+            "lessons",
+            "marine",
+            "pet"
+        ]
     },
     {
         name: "for sale",
-        data: []
+        data: [
+            "antiques",
+            "appliances",
+            "arts+crafts",
+            "atv/utv/sno",
+            "auto parts",
+            "aviation",
+            "baby+kid",
+            "barter",
+            "beauty+hlth",
+            "bike parts",
+            "bikes",
+            "boat parts",
+            "cars+trucks",
+            "cds/dvd/vhs",
+            "collectibles",
+            "computers",
+            "electronics",
+            "farm+garden",
+            "free",
+            "furniture",
+            "garage sale",
+            "household",
+            "jewelry",
+            "motorcycles",
+            "music instr",
+            "photo+video",
+            "rvs+camp",
+            "sporting",
+            "tools",
+            "toys+games",
+            "video gaming",
+            "wheels+tires"
+            ]
     },
     {
         name: "gigs",
-        data: []
+        data: [
+            "computer",
+            "creative",
+            "crew",
+            "domestic",
+            "event",
+            "labor",
+            "talent",
+            "writing",
+            ]
     },
     {
         name: "discussion forums",
-        data: []
+        data: [
+            "android",
+            "apple",
+            "arts",
+            "atheist",
+            "autos",
+            "beauty",
+            "bikes",
+            "celebs",
+            "manners",
+            "marriage",
+            "vegan",
+            "writing"
+        ]
     },
     {
         name: "resumes",
-        data: []
+        data: [
+            "all"
+        ]
     }
 ];
-
-var gmap_style = {
-    paddingTop: "200px"
-};
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -217,7 +306,7 @@ function App() {
                 {/* the text */}
                 <div className="gmap flex-center-wrap">
                     <img
-                        className="gmap-img "
+                        className="gmap-img"
                         src={require("./images/maps.png")}
                     ></img>
                     <div className="circle "></div>

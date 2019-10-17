@@ -57,6 +57,7 @@
     width: 60vw;
     height: 60vh;
     overflow: break-word;
+    /* position: relative; */
 }
 
 .gmap {
